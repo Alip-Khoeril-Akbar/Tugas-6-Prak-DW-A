@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuaca Jakarta dengan WeatherAPI</title>
+    <style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(to bottom, #87CEEB, #fff);
+        color: #333;
+        text-align: center;
+        padding: 20px;
+        margin: 0;
+    }
+
+    h1 {
+        color: #fff;
+        font-size: 2.5em;
+        margin-bottom: 10px;
+    }
+
+    .weather-info, .forecast {
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+
+    .forecast {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .day {
+        background-color: #f0f8ff;
+        padding: 15px;
+        border: 2px solid #87CEEB;
+        border-radius: 15px;
+        transition: transform 0.3s ease;
+        width: 150px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .day:hover {
+        transform: scale(1.05);
+    }
+
+    h4 {
+        font-size: 1.2em;
+        color: #333;
+    }
+
+    p {
+        margin: 10px 0;
+    }
+
+    .weather-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    </style>
+</head>
+<body>
+
+    <h1>Cuaca di Jakarta</h1>
+    <div id="current-weather" class="weather-info">
+        <!-- Cuaca hari ini akan ditampilkan di sini -->
+    </div>
+
+    <h2>Ramalan Cuaca 7 Hari ke Depan</h2>
+    <div id="weather-forecast" class="forecast">
+        <!-- Ramalan cuaca akan ditampilkan di sini -->
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
